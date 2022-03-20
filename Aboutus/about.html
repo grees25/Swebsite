@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" type="text/css" href="about.css">
+</head>
+<body>
+<!**********nav parts starts ************** -->
+<nav class="navbar navbar-expand-md navbar-light bg-light navbar-sticky navbar-floating">
+
+  <a class="navbar-brand" href="#"><img src="logo color.png" margin-left width="160"></a>
+ 
+  <div class="d-flex align-items-center order-lg-3">
+                    <a class="media media-tool" href="tel:+9779818343460">
+                        <i class="media-tool-icon cxi-iphone"></i>
+                        <div class="media-body ml-2 pl-1">
+                            <h6 class="media-tool-title">Call me: </h6>
+                            <p>+977 9818343460</p>
+                        </div>
+                    </a>
+                    <a class="media media-tool" href="mailto:grees.sitoula@gmail.com">
+                        <i class="media-tool-icon cxi-chat"></i>
+                        <div class="media-body ml-2 pl-1">
+                            <h6 class="media-tool-title">Talk to me:</h6>
+                            <p>info@grees.com</p>
+                            
+                        </div>
+                    </a>
+                </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav" id="myMenu">
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="Home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="#">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="#">Services</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="login/log.html">Login</a>
+      </li>  
+      <li class="nav-item dropdown font-weight-bold">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Make An Appointment
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Online</a>
+        <a class="dropdown-item" href="#">Appointment</a>
+      </div>
+    </li>
+    <li>
+    <div class="search-box">
+      <input class="search-txt" id="mySearch" type="text" onkeyup="myFunction()" name="" placeholder="type to search">
+      <a class="search-btn" href="#">
+        <i class="fa fa-search"></i>
+      </a>
+    </div>
+  </li>
+    </ul>
+  </div>   
+</nav>
+<!**********nav parts end ************** -->
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i, txtvalue;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+<!**********search parts end ************** -->
+
+<!**********image and p parts start ************** -->
+
+<section>
+  <div class="rows">
+    
+    <div class="chichi">
+      <h3>About us</h3>
+      <h4>We work with you to address your abroad study Dream.</h4>
+      <p class="chichip text-justify">‘Prelude’ is located at Tinkune, the heart of Kathmandu Metropolitan City. Academicians and professionals with substantial management and teaching experiences both in the country and abroad have promoted ‘Prelude’. Their experience and exposure both in academic and professional fields have put them in a unique position to understand appreciate and reflect on the needs of organization and the academic aspiration of students.
+
+      ‘Prelude’ is a professional education consulting and facilitating institution for the students for higher studies in Asian, European and American countries.<br>‘Prelude’ is a professional education consulting and facilitating institution for the students for higher studies in Asian, European and American countries.</p>
+      <p><b>‘Prelude’ is a team where genuine professional education counselors are working together for genius education seekers.</p>
+      
+    </div>
+    <div class="parpar">
+      <img src="OtherService.jpg" class="image3">
+      <img src="images.jpeg" class="image4">
+    </div>
+  </div>
+</section>
+
+<!**********image and p parts end ************** -->
+<!**********image1 and p parts starts ************** -->
+<style>
+ul#menu li {
+  display:inline;
+}
+</style>
+  <section>
+    <div class="row">
+      <div class="column">
+        <div class="image">
+            <img src="DikshyaService.jpg" class="image3">
+        </div>
+      </div>
+      <div class="column">
+        <h3>About Consultancy</h3>
+                <h4>Three Distinct features
+        of Prelude</h4>
+        <ul class="menu1" id="menu">
+          <li>
+            <span class="span">01</span>
+          <h5 style="display:inline;">Substantial Experience</h5></li>
+          <ul class="ull"><li ><p class="text-justify">Promoted and run by true academicians and Professionals with substantial experience.</p></li></ul>
+          
+        </ul>
+        <hr>
+        <ul class="menu2" id="menu">
+          <li>
+            <span class="span">02</span>
+          <h5 style="display:inline;">Service Network</h5></li>
+          <ul class="ull"><li ><p class="text-justify">Contacts with top universities/colleges worldwide. Service networks with may reputed consultancies in USA, UK, Australia and other countries.</p></li></ul>
+          
+        </ul>
+        <hr>
+        <ul class="menu3" id="menu">
+          <li>
+            <span class="span">03</span>
+          <h5 style="display:inline;">Total Services Under One Roof</h5></li>
+          <ul class="ull"><li ><p class=" text-justify">We provide total services under one roof committed to meet its objectives through fair, accountable and productive processes.</p></li></ul>
+          
+        </ul>
+        <hr>
+        
+      </div>
+      
+    </div>
+  </section>
+
+<!**********image1 and p parts end ************** -->
+<!************Footer Starts ***************-->
+<!************Footer Starts ***************-->
+
+              <footer class="footersection" id="footerdiv">
+                <div class="container footerdiv">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-3 col-xl-3 col-12 footerdiv">
+                            <div>
+                                <h3>About</h3>
+                                <p class="text-justify">We provide schools with superior service, delivering consultancy, training and professional development via our trusted and experienced team, who have proven track records of excellence and credibility. </p>
+                            </div>
+                        </div>
+             <div class="col-md-4 col-xl-3 col-lg-3 col-12 footerdiv">
+                <div class="footercss">
+                    <h3>Nabigation Links</h3>
+                             <ul class="no-bullets">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">About</a></li>
+                              </ul>
+                              <ul class="smedia">
+                              <a href="https://www.facebook.com"><span class="fa fa-facebook"></span></a>
+                              <a href="https://www.instagram.com/greessitoula/"><span class="fa fa-instagram"></span></a>
+                              <a href="#"><span class="fa fa-twitter"></span></a>
+                              <a href="#"><span class="fa fa-youtube"></span></a>
+                              </ul>
+                   
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-12 col-lg-3 col-xl-3 col-12 footerdiv">
+                <div class="footercol">
+                    <h3>Head Office</h3>
+                    <h4>Address:<a href="https://www.google.com/maps/d/viewer?msa=0&ll=33.197702045283584%2C-107.23871855917469&spn=0.014813%2C0.027874&mid=1hWIG-5AD4mLh_ROvAwS7hA5GvoU&z=17">Harisiddhi-08,Lalitpur</a>
+                    </h4>
+                    <script>
+                      
+
+                      $(document).ready(function () {
+                          //Convert address tags to google map links - Copyright Michael Jasper 2011
+                          $('address').each(function () {
+                              var link = "<a href='http://maps.google.com/maps?q=" + encodeURIComponent( $(this).text() ) + "' target='_blank'>" + $(this).text() + "</a>";
+                              $(this).html(link);
+                          });
+                      });
+                    </script>
+                    <h4>Gmail:<a href="mailto:grees.sitoula@gmail.com">grees.sitoula@gmail.com</a></h4>
+                    <h4>Call:<a href="tel:+9779818343460">+9779818343460</a></h4>
+                    
+                    <div class="container newsletter">
+                        <div class="row">
+                            <div class="col-lg-12 col-lg-3 col-xl-3 col-14">
+                                 <div class="input-group mb-3">
+                                    <input type="text" class="form-control news-input" placeholder="Your Email" required autocomplete="off">
+                                    <div class="input-group-append">
+                                      <button type="Subscribe" class="btn btn-primary">subscribe</button>
+                    </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                        
+
+
+                    </div>
+                                </div>
+                            </div>
+            
+        </div>
+        <div class="mt-5 text-center">
+             <p> @copyright @2021 ALl rights reserved |Is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="scrolltop float-right">
+            <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+
+    </div>
+  </div>
+
+</footer>
+<script>
+  mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 5000 || document.documentElement.scrollTop > 1000) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+<!************Footer Ends ***************-->
+
+</body>
+</html>

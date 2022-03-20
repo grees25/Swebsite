@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="login.css">
+  <title>login</title>
+  
+</head>
+<body>
+    <div id="container" class="container">
+        <div class="row">
+          <!-- Signup starts-->
+            <div class="col align-items-center flex-col sign-up">
+              <div class="form-wrapper align-items-center">
+                <div class="form sign-up">
+                  <div class="input-group">
+                    <i class='bx bxs-user'></i>
+                    <input type="text" name="name" placeholder="Username" required>
+                  </div>
+                  <div class="input-group">
+                    <i class='bx bx-mail-send'></i>
+                    <input type="email" name="email" placeholder="Email" required="email">
+                  </div>
+                  <div class="input-group">
+                    <i class='bx bxs-lock' ></i>
+                    <input type="password" name="password" placeholder="Password" required>
+                  </div>
+                  <div class="input-group">
+                    <i class='bx bxs-lock' ></i>
+                    <input type="password" name="password" placeholder="ConfirmPassword">
+                  </div>
+                  <button>Sign UP</button>
+                  <p>
+                    <span>
+                      Already have an account?
+                    </span>
+                    <b onclick="toggle()" class="pointer">
+                      Sign in here
+                    </b>
+                  </p>
+                </div>
+              </div>
+              <div class="form-wrapper"> 
+                <div class="social-list align-items-center sign-up">
+                <div class="align-items-center facebook-bg">
+                  <i class='bx bxl-facebook' ></i>
+                </div>
+                <div class="align-items-center google-bg">
+                  <i class='bx bxl-google' ></i>
+                </div>
+                <div class="align-items-center twitter-bg">
+                  <i class='bx bxl-twitter' ></i>
+                </div>
+                <div class="align-items-center insta-bg">
+                  <i class='bx bxl-instagram' ></i>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+          <!--Signup ends-->
+          <!--SignIN Starts-->
+            <div class="col align-items-center flex-col sign-in">
+              <div class="form-wrapper align-items-center">
+                <div class="form sign-in">
+                  <div class="input-group">
+                    <i class='bx bxs-user'></i>
+                    <input type="text" name="name" placeholder="Username">
+                  </div>
+                  <div class="input-group">
+                    <i class='bx bxs-lock' ></i>
+                    <input type="password" name="password" placeholder="Password">
+                  </div>
+                  <button>Sign in</button>
+                  <p>
+                    <b>
+                      Forget Password?
+                    </b>
+                  </p>
+                  <p>
+                    <span>
+                      Don't have an account?
+                    </span>
+                    <b onclick="toggle()" class="pointer">
+                      Sign up here
+                    </b>
+                  </p>
+                </div>
+              </div>
+              <div class="form-wrapper"> 
+                <div class="social-list align-items-center sign-in">
+                <div class="align-items-center facebook-bg">
+                  <i class='bx bxl-facebook' ></i>
+                </div>
+                <div class="align-items-center google-bg">
+                  <i class='bx bxl-google' ></i>
+                </div>
+                <div class="align-items-center twitter-bg">
+                  <i class='bx bxl-twitter' ></i>
+                </div>
+                <div class="align-items-center insta-bg">
+                  <i class='bx bxl-instagram' ></i>
+                </div>
+              </div>
+              </div>
+              <!--SignIN ends-->
+            </div>
+            <!--end form section-->
+        </div>
+        <div class="row content-row">
+          <div class="col align-items-center flex-col">
+            <div class="text sign-in">
+              <h2>
+                Welcome Back
+              </h2>
+              <p>
+                n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+              </p>
+            </div>
+            <div class="img sign-in">
+              <img src="images.png" alt="welcome">
+            </div>
+          </div>
+          <!--End sign in content-->
+          <!--sign up content -->
+          <div class="col align-items-center flex-col" >
+            
+            <div class="img sign-up">
+              <img src="test.png" alt="welcome">
+            </div>
+            <div class="text sign-up">
+              <h2>
+                Join With Us
+              </h2>
+              <p>
+                n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+              </p>
+            </div>
+          </div>
+          <!--end sign up content-->
+        </div>
+        <!--end cotent section-->
+    </div>
+<script src="index.js"></script>
+</body>
+</html>

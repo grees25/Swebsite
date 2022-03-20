@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <title>Bootstrap Example</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+            
+            <link rel="stylesheet" type="text/css" href="online.css">
+          </head>
+   <body>
+          <!**********nav parts starts ************** -->
+          <nav class="navbar navbar-expand-md navbar-light bg-light navbar-sticky navbar-floating">
+
+            <a class="navbar-brand" href="#"><img src="logo color.png" margin-left width="160"></a>
+           
+            <div class="d-flex align-items-center order-lg-3">
+                              <a class="media media-tool" href="tel:+9779818343460">
+                                  <i class="media-tool-icon cxi-iphone"></i>
+                                  <div class="media-body ml-2 pl-1">
+                                      <h6 class="media-tool-title">Call me: </h6>
+                                      <p>+977 9818343460</p>
+                                  </div>
+                              </a>
+                              <a class="media media-tool" href="mailto:grees.sitoula@gmail.com">
+                                  <i class="media-tool-icon cxi-chat"></i>
+                                  <div class="media-body ml-2 pl-1">
+                                      <h6 class="media-tool-title">Talk to me:</h6>
+                                      <p>info@grees.com</p>
+                                      
+                                  </div>
+                              </a>
+                          </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav" id="myMenu">
+                <li class="nav-item">
+                  <a class="nav-link font-weight-bold" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-weight-bold" href="Aboutus/about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-weight-bold" href="Services/service.html">Services</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link font-weight-bold" href="login/log.html">Login</a>
+                </li>  
+                <li class="nav-item dropdown font-weight-bold">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Make An Appointment
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Online</a>
+                  <a class="dropdown-item" href="#">Appointment</a>
+                </div>
+              </li>
+              <li>
+              <div class="search-box">
+                <input class="search-txt" id="mySearch" type="text" onkeyup="myFunction()" name="" placeholder="type to search">
+                <a class="search-btn" href="#">
+                  <i class="fa fa-search"></i>
+                </a>
+              </div>
+            </li>
+              </ul>
+            </div>   
+          </nav>
+          <!**********nav parts end ************** -->
+          <script>
+          function myFunction() {
+            var input, filter, ul, li, a, i, txtvalue;
+            input = document.getElementById("mySearch");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myMenu");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+              a = li[i].getElementsByTagName("a")[0];
+              if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+              } else {
+                li[i].style.display = "none";
+              }
+            }
+          }
+          </script>
+          <!**********search parts end ************** -->
+          <!**********Form part starts ************** -->
+          <section>
+          	<div class="row">
+          		<div class="colum col-md-4 col-sm-4 col-lg-4" >
+          			<h2>Let GO</h2>
+          			
+          		</div>
+          		<div class="column col-md-8 col-lg-8 col-sm-8 col-xl-8 col-12">
+          			<p>Choose the date convininet to you and receive the appointment directly to your mail. Meet us and secure your future.</p>
+          			<div class="column1 col-md-8 col-sm-12 col-xl-12 col-lg-12 col-12">
+
+          			<form action="/action_page.php">
+                    <label for="email">UserName:</label></div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter Your Name" id="name" required autocomplete="off">
+                            
+                            </div>
+                             <label for="email">UserName:</label></div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter Your Name" id="name" required autocomplete="off">
+                            
+                            </div>
+                            
+
+
+
+                          </form>
+
+          		</div>
+          		
+          	</div>
+          </div>
+          </section>
+     </body>
+   </html>

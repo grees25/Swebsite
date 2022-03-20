@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" type="text/css" href="service.css">
+</head>
+<body>
+<!**********nav parts starts ************** -->
+<nav class="navbar navbar-expand-md navbar-light bg-light navbar-sticky navbar-floating">
+
+  <a class="navbar-brand" href="#"><img src="logo color.png" margin-left width="160"></a>
+ 
+  <div class="d-flex align-items-center order-lg-3">
+                    <a class="media media-tool" href="tel:+9779818343460">
+                        <i class="media-tool-icon cxi-iphone"></i>
+                        <div class="media-body ml-2 pl-1">
+                            <h6 class="media-tool-title">Call me: </h6>
+                            <p>+977 9818343460</p>
+                        </div>
+                    </a>
+                    <a class="media media-tool" href="mailto:grees.sitoula@gmail.com">
+                        <i class="media-tool-icon cxi-chat"></i>
+                        <div class="media-body ml-2 pl-1">
+                            <h6 class="media-tool-title">Talk to me:</h6>
+                            <p>info@grees.com</p>
+                            
+                        </div>
+                    </a>
+                </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav" id="myMenu">
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="Aboutus/about.html">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="#">Services</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="login/log.html">Login</a>
+      </li>  
+      <li class="nav-item dropdown font-weight-bold">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Make An Appointment
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Online</a>
+        <a class="dropdown-item" href="#">Appointment</a>
+      </div>
+    </li>
+    <li>
+    <div class="search-box">
+      <input class="search-txt" id="mySearch" type="text" onkeyup="myFunction()" name="" placeholder="type to search">
+      <a class="search-btn" href="#">
+        <i class="fa fa-search"></i>
+      </a>
+    </div>
+  </li>
+    </ul>
+  </div>   
+</nav>
+<!**********nav parts end ************** -->
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i, txtvalue;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+<!**********search parts end ************** -->
+<!**********Box parts starts ************** -->
+                  <h2 class="head" style="text-align: center;">OUR SERVICES</h2>
+                <h3 class="head2" style="text-align: center;">We are determined <span style="color:#50d1c0">to make<br>
+                your</span> dream a reality.</h3>
+      <section class="Box"> 
+        <div class="row">
+          <div class="card col-md-3 col-lg-4 col-sm-4 col-xl-3 col-10">
+            <a style="color:#50d1c0; text-align: center; font-size: 40px;" >
+              <i class="fa fa-user"></i>
+                </a>
+                <h4 class="noselect" style="text-align: center;">Career Counselling</h4>
+                <p class=" noselect text-justify">Keeping a student’s interest and background of study in mind we suggest to choose a subject which will lead them to a better future.</p>
+            
+          </div>
+          <div class="card col-md-3 col-lg-4 col-sm-4 col-xl-3 col-10">
+            <a style="color:#50d1c0; text-align: center; font-size: 40px;" >
+             <i class="fa fa-wheelchair"></i>
+                </a>
+                <h4 class="noselect" style="text-align: center;">Choosing the Right Fit</h4>
+                <p class="noselect text-justify">After formal counseling, keeping every need of student in mind we assure them that we select the right college and university for our students.</p>
+            
+          </div>
+          <div class="card col-md-3 col-lg-4 col-sm-4 col-xl-3 col-10">
+            <a style="color:#50d1c0; text-align: center; font-size: 40px;" >
+              <i class="fa fa-info"></i>
+                </a>
+                <h4 class="noselect" style="text-align: center;">Admission Information</h4>
+                <p class=" noselect text-justify">Every country has its own rules and regulation for entry of foreign students. We provide information and guidance to students regarding these.</p>
+            
+          </div>
+          <div class="card col-md-3 col-lg-4 col-sm-4 col-xl-3 col-10">
+            <a style="color:#50d1c0; text-align: center; font-size: 40px;" >
+              <i class="fa fa-book"></i>
+                </a>
+                <h4 class="noselect" style="text-align: center;">Documentation</h4>
+                <p class=" noselect text-justify">Every embassy expect that students submit certain documents when applying for visa. We assist students in submitting the right documents as per embassy rules.</p>
+            
+          </div>
+          <div class="card col-md-3 col-lg-4 col-sm-4 col-xl-3 col-10">
+            <a style="color:#50d1c0;text-align: center; font-size: 40px;">
+              <i class="fa fa-american-sign-language-interpreting"></i>
+                </a>
+                <h4 class="noselect" style="text-align: center;">Interview Preparations</h4>
+                <p class="noselect text-justify">We conduct pre-departure briefing and prepare student for face to face interviews in High Commission/Embassies with high level of confidence.</p>
+            
+          </div>
+          <div class="card col-md-3 col-lg-4 col-sm-4 col-xl-3 col-10">
+            <a style="color:#50d1c0;text-align: center; font-size: 40px;">
+              <i class="fa fa-bullseye"></i>
+                </a>
+                <h4 class="noselect" style="text-align: center;">Arrangements</h4>
+                <p class=" noselect text-justify">After approval of the visa, we assist students in travel and accommodation arrangements as appropriate or their needs.</p>
+            
+          </div>
+          
+        </div>
+      </section>
+
+
+<!**********Box parts end ************** -->
+<!************Footer Starts ***************-->
+
+              <footer class="footersection" id="footerdiv">
+                <div class="container footerdiv">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12 footerdiv">
+                            <div>
+                                <h3>About</h3>
+                                <p class="text-justify">We provide schools with superior service, delivering consultancy, training and professional development via our trusted and experienced team, who have proven track records of excellence and credibility. </p>
+                            </div>
+                        </div>
+             <div class="col-lg-4 col-md-6 col-12 footerdiv">
+                <div class="footercss">
+                    <h3>Nabigation Links</h3>
+                             <ul class="no-bullets">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">About</a></li>
+                              </ul>
+                              <ul class="smedia">
+                              <a href="https://www.facebook.com"><span class="fa fa-facebook"></span></a>
+                              <a href="https://www.instagram.com/greessitoula/"><span class="fa fa-instagram"></span></a>
+                              <a href="#"><span class="fa fa-twitter"></span></a>
+                              <a href="#"><span class="fa fa-youtube"></span></a>
+                              </ul>
+                   
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-12 col-12 footerdiv">
+                <div class="footercol">
+                    <h3>Head Office</h3>
+                    <h4>Address:<a href="https://www.google.com/maps/d/viewer?msa=0&ll=33.197702045283584%2C-107.23871855917469&spn=0.014813%2C0.027874&mid=1hWIG-5AD4mLh_ROvAwS7hA5GvoU&z=17">Harisiddhi-08,Lalitpur</a>
+                    </h4>
+                    <script>
+                      
+
+                      $(document).ready(function () {
+                          //Convert address tags to google map links - Copyright Michael Jasper 2011
+                          $('address').each(function () {
+                              var link = "<a href='http://maps.google.com/maps?q=" + encodeURIComponent( $(this).text() ) + "' target='_blank'>" + $(this).text() + "</a>";
+                              $(this).html(link);
+                          });
+                      });
+                    </script>
+                    <h4>Gmail:<a href="mailto:grees.sitoula@gmail.com">grees.sitoula@gmail.com</a></h4>
+                    <h4>Call:<a href="tel:+9779818343460">+9779818343460</a></h4>
+                    
+                    <div class="container newsletter">
+                        <div class="row">
+                            <div class="col-lg-12 col-14">
+                                 <div class="input-group mb-3">
+                                    <input type="text" class="form-control news-input" placeholder="Your Email" required autocomplete="off">
+                                    <div class="input-group-append">
+                                      <button type="Subscribe" class="btn btn-primary">subscribe</button>
+                    </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                        
+
+
+                    </div>
+                                </div>
+                            </div>
+            
+        </div>
+        <div class="mt-5 text-center">
+             <p> @copyright @2021 ALl rights reserved |Is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="scrolltop float-right">
+            <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+
+    </div>
+  </div>
+
+</footer>
+<script>
+  mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 5000 || document.documentElement.scrollTop > 3000) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+<!************Footer Ends ***************-->
+</body>
+</html>

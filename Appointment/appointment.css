@@ -1,0 +1,110 @@
+ /*****************nav css start***********/
+.nav-item{
+	
+  font-size: 1em;
+ padding: 15px;
+ color: black;
+}
+
+
+ .nav-link:hover { color: #CC0000!important;
+  text-decoration: none; }
+
+ 
+.media{
+	color:black;
+}
+.media:hover{color:#cc0000!important;}
+
+ .search-data{
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  background: #2f3640;
+  font-size: 10px;
+  border: none;
+  font-weight: 500;
+  background: none;
+}
+.search-box{
+	position: absolute;
+	padding: 10px;
+
+ }
+ .search-btn{
+ 	color: #e84118;
+ 	float: right;
+ 	width: 30px;
+ 	height: 40px;
+ 	border-radius: 40%;
+ 	background: #2f3640;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+ .search-box:hover > .search-txt {
+ 	width: 155px;
+ 	padding:0 6px;
+ 	background: none;
+ }
+
+ .search-txt{
+ 	border:none;
+ 	background: none;
+ 	outline: none;
+ 	padding:0;
+ 	font-size: 18px;
+ 	transition:0.4s;
+ 	line-height: 40px;
+ 	width:0px;
+
+ }
+ .mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+  background-color:#bbb;
+}
+.myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color:#bbb;
+
+}
+.myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+  background-color:#bbb;
+
+}
+.myMenu li a:hover {
+  background-color: #eee;
+
+}
+.media-body .media-tool-title h6:hover{
+  text-decoration: none;
+}
+.dropdown-menu{
+  opacity: 0.9;
+  border-radius: 16px;
+}
+.dropdown-item:hover{
+  color: white;
+  background-color: #50d1c0;
+  border-radius: 16px;
+}
+.dropdown-item{
+  height: 45px;
+  width: 100%;
+}
+/*****************nav css ends***********/
+/*****************Form css starts***********/
+.column{
+  width: 100%;
+}
+
+/**************** Form  css ends***********/
